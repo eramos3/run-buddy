@@ -335,6 +335,7 @@ section {
   max-width: 100%;
 }
 
+
 .trainer {
   margin: 20px;
   background: #024e76;
@@ -342,8 +343,54 @@ section {
   flex: 1;
 }
 
-.trainer img {
+.trainers {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+
+.trainer-img {
   width: 100%;
+  min-height: 300px;
+  background-size:cover;
+  display: flex;
+  padding: 15px;
+  align-items: flex-end;
+  position: relative;
+}
+
+
+.trainer-img::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(2, 37, 118, 0.3), 80.71%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; 
+  transition: ease-out;
+}
+
+article:hover .trainer {
+  opacity: 1;
+}
+.trainer-img h3 {
+  position: relative;
+  z-index: 7999;
+  font-size: 22px;
+  margin-bottom: 5px;
+  top: 200px;
+}
+
+.trainer-img h4 {
+  position: relative;
+  z-index: 7000;
+  font-size: 28px;
+  top: 200px;
+  overflow: hidden;
 }
 
 .trainer-bio {
@@ -373,12 +420,17 @@ section {
   font-size: 17px;
 }
 
-.trainers {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+
+.trainer-1 {
+  background-image: url("../images/trainer-1.jpg");
+}
+
+.trainer-2 {
+  background-image: url("../images/trainer-2.jpg");
+}
+
+.trainer-3 {
+  background-image: url("../images/trainer-3.jpg");
 }
 
 .contact{
