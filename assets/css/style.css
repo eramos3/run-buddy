@@ -366,7 +366,7 @@ section {
   content: "";
   height: 100%;
   width: 100%;
-  background: linear-gradient(rgba(2, 37, 118, 0.3), 80.71%);
+  background:linear-gradient(12deg, rgba(0,5,0,.8), rgba(0,255,0,0) 70.71%),;
   position: absolute;
   top: 0;
   left: 0;
@@ -378,7 +378,7 @@ article:hover .trainer {
   opacity: 1;
 }
 .trainer-img h3 {
-  position: relative;
+  position: absolute;
   z-index: 7999;
   font-size: 22px;
   margin-bottom: 5px;
@@ -386,7 +386,7 @@ article:hover .trainer {
 }
 
 .trainer-img h4 {
-  position: relative;
+  position: inherit;
   z-index: 7000;
   font-size: 28px;
   top: 200px;
